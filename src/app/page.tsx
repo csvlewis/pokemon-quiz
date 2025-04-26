@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import CreateQuizQuestions from "@/features/questions/components/CreateQuizQuestions";
 
 export default function Home() {
+  CreateQuizQuestions("1").then((response) => {
+    console.log("response", response);
+    return response;
+  });
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
