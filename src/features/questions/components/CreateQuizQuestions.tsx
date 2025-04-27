@@ -1,4 +1,5 @@
 import Pokedex from "pokedex-promise-v2";
+import { Option } from "@/types/Option";
 const P = new Pokedex();
 
 const pokemonTypes: string[] = [
@@ -31,11 +32,6 @@ type PokemonData = {
   }>;
 };
 
-export type Option = {
-  text?: string;
-  isCorrect?: boolean;
-};
-
 const Capitalize = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
@@ -49,7 +45,7 @@ const GenerateResourceUrls = (number: number) => {
   return urls;
 };
 
-const CreateQuizQuestions = (quizLength: number) => {
+export const CreateQuizQuestions = (quizLength: number) => {
   const resourceUrls: string[] = GenerateResourceUrls(quizLength);
   return P.getResource(resourceUrls)
     .then((pokemonData) => {
@@ -123,5 +119,3 @@ const GenerateQuestion = (pokemonData: PokemonData) => {
     };
   }
 };
-
-export default CreateQuizQuestions;

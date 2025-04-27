@@ -11,26 +11,30 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import CreateQuizQuestions from "@/features/questions/components/CreateQuizQuestions";
-import { useEffect, useState } from "react";
-import { Option } from "@/features/questions/components/CreateQuizQuestions";
-
-type Question = {
-  imageUrl: string;
-  question: string;
-  options: Option[];
-};
+import { CreateQuizQuestions } from "@/features/questions/components/CreateQuizQuestions";
+import { useEffect } from "react";
+import { useQuizContext } from "@/features/contexts/components/QuizContextProvider";
+import { Option } from "@/types/Option";
 
 export default function Home() {
-  const [correctAnswers, setCorrectAnswers] = useState<number>(0);
-  const [showResults, setShowResults] = useState<boolean>(false);
-  const [quizLength, setQuizLength] = useState<number>(5);
-  const [quizInProgress, setQuizInProgress] = useState<boolean>(false);
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [selectedAnswer, setSelectedAnswer] = useState<Option>({});
-  const [currentQuestion, setCurrentQuestion] = useState<number>(1);
-  const [displayAnswer, setDisplayAnswer] = useState<boolean>(false);
-  const isSubmitDisabled = selectedAnswer.text === undefined;
+  const {
+    correctAnswers,
+    setCorrectAnswers,
+    currentQuestion,
+    setCurrentQuestion,
+    displayAnswer,
+    setDisplayAnswer,
+    questions,
+    setQuestions,
+    quizInProgress,
+    setQuizInProgress,
+    quizLength,
+    setQuizLength,
+    selectedAnswer,
+    setSelectedAnswer,
+    showResults,
+    setShowResults,
+  } = useQuizContext();
 
   useEffect(() => {
     CreateQuizQuestions(quizLength).then((response) => {
@@ -168,7 +172,7 @@ export default function Home() {
               ))}
             </Stack>
             <Button
-              disabled={isSubmitDisabled}
+              disabled={selectedAnswer.text === undefined}
               variant="contained"
               onClick={() => handleSubmit(selectedAnswer)}
             >
