@@ -5,7 +5,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../theme";
-import { QuizContextProvider } from "@/features/contexts/components/QuizContextProvider";
+import { QuizContextProvider } from "@/features/context/components/QuizContextProvider";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],

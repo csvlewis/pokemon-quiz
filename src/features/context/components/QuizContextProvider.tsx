@@ -22,6 +22,7 @@ type QuizContextType = {
   setSelectedAnswer: React.Dispatch<React.SetStateAction<Option>>;
   showResults: boolean;
   setShowResults: React.Dispatch<React.SetStateAction<boolean>>;
+  resetQuiz: () => void;
 };
 
 const QuizContext = createContext<QuizContextType>({
@@ -37,6 +38,7 @@ const QuizContext = createContext<QuizContextType>({
   setQuizInProgress: () => {},
   quizLength: 5,
   setQuizLength: () => {},
+  resetQuiz: () => {},
   selectedAnswer: {} as Option,
   setSelectedAnswer: () => {},
   showResults: false,
@@ -56,6 +58,15 @@ export function QuizContextProvider({
   const [quizLength, setQuizLength] = useState<number>(5);
   const [selectedAnswer, setSelectedAnswer] = useState<Option>({});
   const [showResults, setShowResults] = useState<boolean>(false);
+  const resetQuiz = () => {
+    setCorrectAnswers(0);
+    setShowResults(false);
+    setQuizInProgress(false);
+    setQuestions([]);
+    setSelectedAnswer({});
+    setCurrentQuestion(1);
+    setDisplayAnswer(false);
+  };
 
   return (
     <QuizContext.Provider
@@ -71,6 +82,7 @@ export function QuizContextProvider({
         quizInProgress,
         setQuizInProgress,
         quizLength,
+        resetQuiz,
         setQuizLength,
         selectedAnswer,
         setSelectedAnswer,

@@ -45,7 +45,7 @@ const GenerateResourceUrls = (number: number) => {
   return urls;
 };
 
-export const CreateQuizQuestions = (quizLength: number) => {
+export const createQuizQuestions = (quizLength: number) => {
   const resourceUrls: string[] = GenerateResourceUrls(quizLength);
   return P.getResource(resourceUrls)
     .then((pokemonData) => {
