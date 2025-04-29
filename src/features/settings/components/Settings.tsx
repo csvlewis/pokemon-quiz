@@ -6,7 +6,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { useQuizContext } from "@/features/context/components/QuizContextProvider";
+import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function Settings(): React.ReactNode {
   const { showResults, quizInProgress, setQuizInProgress, setQuizLength } =

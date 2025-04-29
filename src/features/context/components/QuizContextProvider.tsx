@@ -1,49 +1,9 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
-
+import { useState } from "react";
 import { Option } from "@/types/Option";
 import { Question } from "@/types/Question";
-
-type QuizContextType = {
-  correctAnswers: number;
-  setCorrectAnswers: React.Dispatch<React.SetStateAction<number>>;
-  currentQuestion: number;
-  setCurrentQuestion: React.Dispatch<React.SetStateAction<number>>;
-  displayAnswer: boolean;
-  setDisplayAnswer: React.Dispatch<React.SetStateAction<boolean>>;
-  questions: Question[];
-  setQuestions: React.Dispatch<React.SetStateAction<Question[]>>;
-  quizInProgress: boolean;
-  setQuizInProgress: React.Dispatch<React.SetStateAction<boolean>>;
-  quizLength: number;
-  setQuizLength: React.Dispatch<React.SetStateAction<number>>;
-  selectedAnswer: Option;
-  setSelectedAnswer: React.Dispatch<React.SetStateAction<Option>>;
-  showResults: boolean;
-  setShowResults: React.Dispatch<React.SetStateAction<boolean>>;
-  resetQuiz: () => void;
-};
-
-const QuizContext = createContext<QuizContextType>({
-  correctAnswers: 0,
-  setCorrectAnswers: () => {},
-  currentQuestion: 1,
-  setCurrentQuestion: () => {},
-  displayAnswer: false,
-  setDisplayAnswer: () => {},
-  questions: [],
-  setQuestions: () => {},
-  quizInProgress: false,
-  setQuizInProgress: () => {},
-  quizLength: 5,
-  setQuizLength: () => {},
-  resetQuiz: () => {},
-  selectedAnswer: {} as Option,
-  setSelectedAnswer: () => {},
-  showResults: false,
-  setShowResults: () => {},
-});
+import { QuizContext } from "@/features/context/components/QuizContext";
 
 export function QuizContextProvider({
   children,
@@ -93,8 +53,4 @@ export function QuizContextProvider({
       {children}
     </QuizContext.Provider>
   );
-}
-
-export function useQuizContext(): QuizContextType {
-  return useContext<QuizContextType>(QuizContext);
 }

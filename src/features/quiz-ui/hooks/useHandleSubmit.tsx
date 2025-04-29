@@ -1,17 +1,21 @@
-import { useQuizContext } from "@/features/context/components/QuizContextProvider";
+import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { useIncrementQuestion } from "@/features/quiz-ui/hooks/useIncrementQuestion";
-import { Option } from "@/types/Option";
 
-export function useHandleSubmit(): (answer: Option) => void {
-  const { correctAnswers, displayAnswer, setCorrectAnswers, setDisplayAnswer } =
-    useQuizContext();
+export function useHandleSubmit(): () => void {
+  const {
+    correctAnswers,
+    displayAnswer,
+    selectedAnswer,
+    setCorrectAnswers,
+    setDisplayAnswer,
+  } = useQuizContext();
   const incrementQuestion = useIncrementQuestion();
 
-  return (answer) => {
+  return () => {
     if (displayAnswer) {
       incrementQuestion();
     } else {
-      if (answer.isCorrect) setCorrectAnswers(correctAnswers + 1);
+      if (selectedAnswer.isCorrect) setCorrectAnswers(correctAnswers + 1);
       setDisplayAnswer(true);
     }
   };

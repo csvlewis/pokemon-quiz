@@ -1,5 +1,5 @@
 import { Button, Paper, Stack, Typography } from "@mui/material";
-import { useQuizContext } from "@/features/context/components/QuizContextProvider";
+import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function Results(): React.ReactNode {
   const { correctAnswers, questions, quizInProgress, resetQuiz, showResults } =

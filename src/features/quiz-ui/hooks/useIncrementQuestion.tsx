@@ -1,4 +1,4 @@
-import { useQuizContext } from "@/features/context/components/QuizContextProvider";
+import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function useIncrementQuestion(): () => void {
   const {
@@ -15,10 +15,10 @@ export function useIncrementQuestion(): () => void {
     if (currentQuestion >= questions.length) {
       setQuizInProgress(false);
       setShowResults(true);
-      return;
+    } else {
+      setCurrentQuestion(currentQuestion + 1);
+      setDisplayAnswer(false);
+      setSelectedAnswer({});
     }
-    setCurrentQuestion(currentQuestion + 1);
-    setDisplayAnswer(false);
-    setSelectedAnswer({});
   };
 }
