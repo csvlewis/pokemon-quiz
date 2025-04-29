@@ -64,7 +64,6 @@ const GenerateQuestion = (pokemonData: PokemonData) => {
       Capitalize(type.type.name)
   );
 
-  // unit test this
   const randomTypes: string[] = pokemonTypes
     .filter((type) => !selectedPokemonTypes.includes(type))
     .sort(() => 0.5 - Math.random())
