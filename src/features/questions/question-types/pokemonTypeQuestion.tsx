@@ -15,6 +15,11 @@ export const pokemonTypeQuestion = (pokemonData: PokemonData): Question => {
       capitalize(type.type.name)
   );
 
+  const text: string =
+    selectedTypes.length === 1
+      ? `${name} has which type?`
+      : `${name} has which types?`;
+
   const otherTypes: string[] = filterAndRandomSelect(
     pokemonTypes,
     selectedTypes,
@@ -25,7 +30,7 @@ export const pokemonTypeQuestion = (pokemonData: PokemonData): Question => {
 
   return {
     imageUrl,
-    text: `${name} has which types?`,
+    text,
     options,
   };
 };

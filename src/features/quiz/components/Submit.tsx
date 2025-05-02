@@ -12,7 +12,7 @@ export function Submit(): React.ReactNode {
   if (quizInProgress)
     return (
       <Button
-        disabled={selectedAnswer.text === undefined}
+        disabled={selectedAnswer.text === ""}
         variant="contained"
         onClick={() => handleSubmit()}
       >
