@@ -4,9 +4,9 @@ import { Grid } from "@mui/material";
 import { useEffect } from "react";
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { CreateQuestions } from "@/features/questions/components/CreateQuestions";
-import { Results } from "@/features/results/components/Results";
-import { Settings } from "@/features/settings/components/Settings";
-import { Main } from "@/features/quiz-ui/components/Main";
+import { Settings } from "@/features/quiz/components/Settings";
+import { Main } from "@/features/quiz/components/Main";
+import { Results } from "@/features/quiz/components/Results";
 
 export default function Home() {
   const { setQuestions, quizLength, showResults } = useQuizContext();

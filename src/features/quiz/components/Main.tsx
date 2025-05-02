@@ -1,8 +1,8 @@
 import { Paper, Stack } from "@mui/material";
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
-import { Question } from "@/features/quiz-ui/components/Question";
-import { Options } from "@/features/quiz-ui/components/Options";
-import { Submit } from "@/features/quiz-ui/components/Submit";
+import { Question } from "@/features/quiz/components/Question";
+import { Options } from "@/features/quiz/components/Options";
+import { Submit } from "@/features/quiz/components/Submit";
 
 export function Main(): React.ReactNode {
   const { quizInProgress } = useQuizContext();

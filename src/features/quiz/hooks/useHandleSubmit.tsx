@@ -1,5 +1,5 @@
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
-import { useIncrementQuestion } from "@/features/quiz-ui/hooks/useIncrementQuestion";
+import { useIncrementQuestion } from "@/features/quiz/hooks/useIncrementQuestion";
 
 export function useHandleSubmit(): () => void {
   const {
