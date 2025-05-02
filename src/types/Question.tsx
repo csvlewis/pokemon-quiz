@@ -2,6 +2,6 @@ import { Option } from "./Option";
 
 export type Question = {
   imageUrl: string;
-  question: string;
+  text: string;
   options: Option[];
 };

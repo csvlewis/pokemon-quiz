@@ -16,7 +16,7 @@ export function Settings(): React.ReactNode {
     return (
       <Paper>
         <Stack alignItems="center" spacing={2} sx={{ margin: 2 }}>
-          <Typography>Welcome to the Pokemon Quiz!</Typography>
+          <Typography>Welcome to the Pokémon Quiz!</Typography>
           <Typography>How long would you like your quiz to be?:</Typography>
           <Select
             defaultValue={5}

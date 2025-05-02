@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function Question(): React.ReactNode {
@@ -10,7 +10,15 @@ export function Question(): React.ReactNode {
         <Typography>
           Question {currentQuestion}/{questions.length}
         </Typography>
-        <Typography>{questions[currentQuestion - 1]?.question}</Typography>
+        <Typography>{questions[currentQuestion - 1]?.text}</Typography>
+        <Box
+          component="img"
+          sx={{
+            maxHeight: { xs: 250 },
+            maxWidth: { xs: 250 },
+          }}
+          src={questions[currentQuestion - 1]?.imageUrl}
+        />
       </Stack>
     );
 }
