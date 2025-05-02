@@ -3,7 +3,7 @@
 import { Grid } from "@mui/material";
 import { useEffect } from "react";
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
-import { CreateQuestions } from "@/features/questions/components/CreateQuestions";
+import { fetchPokemonData } from "@/features/questions/api/fetchPokemonData";
 import { Settings } from "@/features/quiz/components/Settings";
 import { Main } from "@/features/quiz/components/Main";
 import { Results } from "@/features/quiz/components/Results";
@@ -12,7 +12,7 @@ export default function Home() {
   const { setQuestions, quizLength, showResults } = useQuizContext();
 
   useEffect(() => {
-    CreateQuestions(quizLength).then((response) => {
+    fetchPokemonData(quizLength).then((response) => {
       setQuestions(response);
     });
   }, [quizLength, showResults, setQuestions]);
