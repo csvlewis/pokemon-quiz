@@ -1,5 +1,5 @@
 import { Option } from "@/types/Option";
-import { capitalize } from "@/features/questions/utils/capitalize";
+import { capitalize } from "@/utils/capitalize";
 
 export const generateTypeOptions = (
   selectedTypes: string[],

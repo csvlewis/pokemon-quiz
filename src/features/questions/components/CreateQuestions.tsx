@@ -2,7 +2,7 @@ import Pokedex from "pokedex-promise-v2";
 import { Question } from "@/types/Question";
 import { PokemonData } from "@/features/questions/types/PokemonData";
 import { generateResourceUrls } from "@/features/questions/utils/generateResourceUrls";
-import { pokemonTypeQuestion } from "@/features/questions/question-types/pokemonTypeQuestion";
+import { GenerateQuestion } from "@/features/questions/components/GenerateQuestion";
 
 const P = new Pokedex();
 
@@ -17,8 +17,4 @@ export const CreateQuestions = (quizLength: number): Promise<Question[]> => {
     .catch((error) => {
       return error;
     });
-};
-
-const GenerateQuestion = (pokemonData: PokemonData): Question => {
-  return pokemonTypeQuestion(pokemonData);
 };
