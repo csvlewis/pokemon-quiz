@@ -1,10 +1,10 @@
 import { Question } from "@/types/Question";
 import { Option } from "@/types/Option";
 import { capitalize } from "@/utils/capitalize";
+import { pokemonTypes } from "@/features/questions/assets/pokemonTypes";
 import { PokemonData } from "@/features/questions/types/PokemonData";
 import { filterAndRandomSelect } from "@/features/questions/utils/filterAndRandomSelect";
 import { generateTypeOptions } from "@/features/questions/utils/generateTypeOptions";
-import { pokemonTypes } from "@/features/questions/assets/pokemonTypes";
 
 export const pokemonTypeQuestion = (pokemonData: PokemonData): Question => {
   const name: string = capitalize(pokemonData.name);

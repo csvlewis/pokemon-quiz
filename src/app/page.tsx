@@ -1,7 +1,8 @@
 "use client";
 
-import { Grid } from "@mui/material";
 import { useEffect } from "react";
+import { Grid } from "@mui/material";
+
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { fetchPokemonData } from "@/features/questions/api/fetchPokemonData";
 import { Settings } from "@/features/quiz/components/Settings";

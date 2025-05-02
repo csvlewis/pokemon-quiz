@@ -1,4 +1,5 @@
 import { Paper, Stack } from "@mui/material";
+
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { Question } from "@/features/quiz/components/Question";
 import { Options } from "@/features/quiz/components/Options";

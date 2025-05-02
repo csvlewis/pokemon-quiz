@@ -18,7 +18,7 @@ export function useIncrementQuestion(): () => void {
     } else {
       setCurrentQuestion(currentQuestion + 1);
       setDisplayAnswer(false);
-      setSelectedAnswer({});
+      setSelectedAnswer({ text: "", isCorrect: false });
     }
   };
 }

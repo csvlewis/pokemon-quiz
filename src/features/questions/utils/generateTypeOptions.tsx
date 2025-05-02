@@ -1,5 +1,6 @@
 import { Option } from "@/types/Option";
 import { capitalize } from "@/utils/capitalize";
+import { randomizeArray } from "@/utils/randomizeArray";
 
 export const generateTypeOptions = (
   selectedTypes: string[],
@@ -10,9 +11,10 @@ export const generateTypeOptions = (
     const wrongOptions = otherTypes.map((type: string) => {
       return { text: type, isCorrect: false };
     });
-    return [{ text: selectedTypes[0], isCorrect: true }, ...wrongOptions].sort(
-      () => 0.5 - Math.random()
-    );
+    return randomizeArray([
+      { text: selectedTypes[0], isCorrect: true },
+      ...wrongOptions,
+    ]);
   }
 
   // if the pokemon has two types
@@ -27,7 +29,5 @@ export const generateTypeOptions = (
     };
   });
 
-  return [{ text: answer, isCorrect: true }, ...wrongOptions].sort(
-    () => 0.5 - Math.random()
-  );
+  return randomizeArray([{ text: answer, isCorrect: true }, ...wrongOptions]);
 };

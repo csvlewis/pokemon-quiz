@@ -1,4 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
+
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function Question(): React.ReactNode {

@@ -1,7 +1,8 @@
 import { Button, Typography } from "@mui/material";
+
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { useHandleSubmit } from "@/features/quiz/hooks/useHandleSubmit";
-import { useSetSubmitText } from "../hooks/useSetSubmitText";
+import { useSetSubmitText } from "@/features/quiz/hooks/useSetSubmitText";
 
 export function Submit(): React.ReactNode {
   const { quizInProgress, selectedAnswer } = useQuizContext();

@@ -6,6 +6,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function Settings(): React.ReactNode {

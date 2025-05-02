@@ -1,9 +1,10 @@
 import { OverridableStringUnion } from "@mui/types";
 import { Button, Stack, Typography } from "@mui/material";
+
+import { Option } from "@/types/Option";
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { useHandleOptionClick } from "@/features/quiz/hooks/useHandleOptionClick";
 import { useSetOptionColor } from "@/features/quiz/hooks/useSetOptionColor";
-import { Option } from "@/types/Option";
 
 export function Options(): React.ReactNode {
   const { currentQuestion, questions, quizInProgress, selectedAnswer } =

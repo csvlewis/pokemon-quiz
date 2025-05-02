@@ -1,4 +1,5 @@
 import Pokedex from "pokedex-promise-v2";
+
 import { Question } from "@/types/Question";
 import { PokemonData } from "@/features/questions/types/PokemonData";
 import { generateResourceUrls } from "@/features/questions/utils/generateResourceUrls";

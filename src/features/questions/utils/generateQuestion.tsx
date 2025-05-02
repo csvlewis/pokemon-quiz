@@ -1,6 +1,5 @@
 import { Question } from "@/types/Question";
 import { PokemonData } from "@/features/questions/types/PokemonData";
-
 import { nameThatPokemonQuestion } from "@/features/questions/question-types/nameThatPokemonQuestion";
 import { pokemonTypeQuestion } from "@/features/questions/question-types/pokemonTypeQuestion";
 

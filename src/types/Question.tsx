@@ -1,4 +1,4 @@
-import { Option } from "./Option";
+import { Option } from "@/types/Option";
 
 export type Question = {
   imageUrl: string;

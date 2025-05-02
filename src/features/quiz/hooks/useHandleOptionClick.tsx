@@ -1,5 +1,5 @@
-import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { Option } from "@/types/Option";
+import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function useHandleOptionClick(): (option: Option) => void {
   const { displayAnswer, selectedAnswer, setSelectedAnswer } = useQuizContext();
@@ -7,7 +7,7 @@ export function useHandleOptionClick(): (option: Option) => void {
   return (option: Option) => {
     if (displayAnswer) return;
     if (option === selectedAnswer) {
-      setSelectedAnswer({});
+      setSelectedAnswer({ text: "", isCorrect: false });
     } else {
       setSelectedAnswer(option);
     }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+
 import { Option } from "@/types/Option";
 import { Question } from "@/types/Question";
 import { QuizContext } from "@/features/context/components/QuizContext";
@@ -16,14 +17,17 @@ export function QuizContextProvider({
   const [questions, setQuestions] = useState<Question[]>([]);
   const [quizInProgress, setQuizInProgress] = useState<boolean>(false);
   const [quizLength, setQuizLength] = useState<number>(5);
-  const [selectedAnswer, setSelectedAnswer] = useState<Option>({});
+  const [selectedAnswer, setSelectedAnswer] = useState<Option>({
+    text: "",
+    isCorrect: false,
+  });
   const [showResults, setShowResults] = useState<boolean>(false);
   const resetQuiz = () => {
     setCorrectAnswers(0);
     setShowResults(false);
     setQuizInProgress(false);
     setQuestions([]);
-    setSelectedAnswer({});
+    setSelectedAnswer({ text: "", isCorrect: false });
     setCurrentQuestion(1);
     setDisplayAnswer(false);
   };

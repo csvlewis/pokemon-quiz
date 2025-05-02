@@ -1,9 +1,10 @@
 import { Question } from "@/types/Question";
 import { Option } from "@/types/Option";
 import { capitalize } from "@/utils/capitalize";
+import { randomizeArray } from "@/utils/randomizeArray";
+import { pokemonNames } from "@/features/questions/assets/pokemonNames";
 import { PokemonData } from "@/features/questions/types/PokemonData";
 import { filterAndRandomSelect } from "@/features/questions/utils/filterAndRandomSelect";
-import { pokemonNames } from "@/features/questions/assets/pokemonNames";
 
 export const nameThatPokemonQuestion = (pokemonData: PokemonData): Question => {
   const name: string = capitalize(pokemonData.name);
@@ -16,7 +17,10 @@ export const nameThatPokemonQuestion = (pokemonData: PokemonData): Question => {
     isCorrect: false,
   }));
 
-  const options: Option[] = [{ text: name, isCorrect: true }, ...wrongOptions];
+  const options: Option[] = randomizeArray([
+    { text: name, isCorrect: true },
+    ...wrongOptions,
+  ]);
 
   return {
     imageUrl,

@@ -1,6 +1,7 @@
 import { OverridableStringUnion } from "@mui/types";
-import { useQuizContext } from "@/features/context/hooks/useQuizContext";
+
 import { Option } from "@/types/Option";
+import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 
 export function useSetOptionColor(): (
   option: Option
