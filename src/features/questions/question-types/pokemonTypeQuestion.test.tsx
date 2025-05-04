@@ -8,8 +8,9 @@ describe("Pokemon type question", () => {
     const pokemonData: PokemonData = {
       id: 1,
       name: "bulbasaur",
-      types: [{ type: { name: "grass" } }, { type: { name: "poison" } }],
       abilities: [],
+      moves: [],
+      types: [{ type: { name: "grass" } }, { type: { name: "poison" } }],
     };
 
     const question: Question = pokemonTypeQuestion(pokemonData);

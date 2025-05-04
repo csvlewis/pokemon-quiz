@@ -1,16 +1,18 @@
 import { generateQuestion } from "./generateQuestion";
 import { Question } from "@/types/Question";
+import { PokemonData } from "@/features/questions/types/PokemonData";
 
 describe("generateQuestion", () => {
   it("should return a Question when given Pokemon data", () => {
-    const pokemonData = {
+    const pokemonData: PokemonData = {
       id: 1,
       name: "bulbasaur",
-      types: [{ type: { name: "grass" } }, { type: { name: "poison" } }],
+      moves: [{ move: { name: "tackle" } }, { move: { name: "vine-whip" } }],
       abilities: [
         { ability: { name: "overgrow" } },
         { ability: { name: "chlorophyll" } },
       ],
+      types: [{ type: { name: "grass" } }, { type: { name: "poison" } }],
     };
 
     const question: Question = generateQuestion(pokemonData);
