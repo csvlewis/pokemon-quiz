@@ -11,7 +11,11 @@ export function Main(): React.ReactNode {
   if (quizInProgress)
     return (
       <Paper>
-        <Stack alignItems="center" spacing={2} sx={{ margin: "16px" }}>
+        <Stack
+          alignItems="center"
+          spacing={2}
+          sx={{ margin: "16px", minWidth: "50vw", minHeight: "50vh" }}
+        >
           <Question />
           <Options />
           <Submit />
