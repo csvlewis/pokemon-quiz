@@ -11,8 +11,7 @@ export const pokemonTypeQuestion = (pokemonData: PokemonData): Question => {
   const imageUrl: string = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonData.id}.png`;
 
   const selectedTypes: string[] = pokemonData.types.map(
-    (type: { slot: number; type: { name: string; url: string } }) =>
-      capitalize(type.type.name)
+    (type: { type: { name: string } }) => capitalize(type.type.name)
   );
 
   const text: string =
