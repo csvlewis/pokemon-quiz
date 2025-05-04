@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "mv .babelrc .babel_ && next dev --turbopack; mv .babel_ .babelrc",
+    "build": "mv .babelrc .babel_ && next build; mv .babel_ .babelrc",
+    "start": "mv .babelrc .babel_ && next start; mv .babel_ .babelrc",
     "lint": "next lint",
     "test": "jest"
   },
