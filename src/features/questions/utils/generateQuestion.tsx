@@ -1,20 +1,25 @@
 import { Question } from "@/types/Question";
-import { PokemonData } from "@/features/questions/types/PokemonData";
-import { nameThatPokemonQuestion } from "@/features/questions/question-types/nameThatPokemonQuestion";
-import { pokemonAbilityQuestion } from "@/features/questions/question-types/pokemonAbilityQuestion";
-import { pokemonMoveQuestion } from "@/features/questions/question-types/pokemonMoveQuestion";
-import { pokemonTypeQuestion } from "@/features/questions/question-types/pokemonTypeQuestion";
+import { PokemonData } from "@/types/PokemonData";
+import { questionTypes } from "@/config/questionTypes";
+import { randomizeArray } from "@/utils/randomizeArray";
 
-export const generateQuestion = (pokemonData: PokemonData): Question => {
-  const questionTypes: ((pokemonData: PokemonData) => Question)[] = [
-    nameThatPokemonQuestion,
-    pokemonAbilityQuestion,
-    pokemonMoveQuestion,
-    pokemonTypeQuestion,
-  ];
+export const generateQuestion = (
+  pokemonData: PokemonData,
+  selectedQuestionTypes: string[]
+): Question => {
+  const filteredQuestionTypes: {
+    name: string;
+    description: string;
+    function: (pokemonData: PokemonData) => Question;
+  }[] = questionTypes.filter((questionType) =>
+    selectedQuestionTypes.includes(questionType.name)
+  );
 
-  const randomQuestionType: (pokemonData: PokemonData) => Question =
-    questionTypes[Math.floor(Math.random() * questionTypes.length)];
+  if (filteredQuestionTypes.length === 0) return {} as Question;
 
-  return randomQuestionType(pokemonData);
+  const question: Question = randomizeArray(filteredQuestionTypes)[0].function(
+    pokemonData
+  );
+
+  return question;
 };

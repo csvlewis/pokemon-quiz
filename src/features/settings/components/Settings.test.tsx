@@ -12,6 +12,8 @@ describe("Settings", () => {
     mockedUseQuizContext.mockReturnValue({
       showResults: false,
       quizInProgress: false,
+      selectedQuestionTypes: [],
+      setSelectedQuestionTypes: jest.fn(),
       setQuizInProgress: jest.fn(),
       setQuizLength: jest.fn(),
     });

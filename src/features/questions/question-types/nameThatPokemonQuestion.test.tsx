@@ -1,5 +1,5 @@
 import { Option } from "@/types/Option";
-import { PokemonData } from "@/features/questions/types/PokemonData";
+import { PokemonData } from "@/types/PokemonData";
 import { Question } from "@/types/Question";
 import { nameThatPokemonQuestion } from "./nameThatPokemonQuestion";
 

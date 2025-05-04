@@ -2,7 +2,7 @@ import { Question } from "@/types/Question";
 import { Option } from "@/types/Option";
 import { capitalize } from "@/utils/capitalize";
 import { pokemonAbilities } from "@/features/questions/assets/pokemonAbilities";
-import { PokemonData } from "@/features/questions/types/PokemonData";
+import { PokemonData } from "@/types/PokemonData";
 import { filterAndRandomSelect } from "@/features/questions/utils/filterAndRandomSelect";
 import { randomizeArray } from "@/utils/randomizeArray";
 

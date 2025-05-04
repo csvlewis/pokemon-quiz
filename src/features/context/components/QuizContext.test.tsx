@@ -20,6 +20,8 @@ describe("QuizContext", () => {
       resetQuiz: jest.fn(),
       selectedAnswer: { text: "", isCorrect: false },
       setSelectedAnswer: jest.fn(),
+      selectedQuestionTypes: [],
+      setSelectedQuestionTypes: jest.fn(),
       showResults: false,
       setShowResults: jest.fn(),
     };

@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionTypeSelect should render correctly 1`] = `
+<div>
+  <div
+    class="MuiStack-root css-163ljxj-MuiStack-root"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+    >
+      Select at least one question type for your quiz:
+    </p>
+    <ul
+      class="MuiList-root MuiList-padding css-v54zg0-MuiList-root"
+    >
+      <li
+        class="MuiListItem-root MuiListItem-gutters css-19f6boz-MuiListItem-root"
+      >
+        <div
+          class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters css-2knotq-MuiButtonBase-root-MuiListItemButton-root"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="MuiListItemIcon-root css-cokf1l-MuiListItemIcon-root"
+          >
+            <span
+              class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-rji8ye-MuiButtonBase-root-MuiCheckbox-root"
+            >
+              <input
+                class="PrivateSwitchBase-input css-j8yymo"
+                data-indeterminate="false"
+                type="checkbox"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="CheckBoxOutlineBlankIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="MuiListItemText-root MuiListItemText-dense css-cfq8qh-MuiListItemText-root"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
+            >
+              Name That Pokémon - Identify the Pokémon from its image
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters css-19f6boz-MuiListItem-root"
+      >
+        <div
+          class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters css-2knotq-MuiButtonBase-root-MuiListItemButton-root"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="MuiListItemIcon-root css-cokf1l-MuiListItemIcon-root"
+          >
+            <span
+              class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-rji8ye-MuiButtonBase-root-MuiCheckbox-root"
+            >
+              <input
+                class="PrivateSwitchBase-input css-j8yymo"
+                data-indeterminate="false"
+                type="checkbox"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="CheckBoxOutlineBlankIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="MuiListItemText-root MuiListItemText-dense css-cfq8qh-MuiListItemText-root"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
+            >
+              Pokémon Ability - Choose the correct ability for the Pokémon
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters css-19f6boz-MuiListItem-root"
+      >
+        <div
+          class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters css-2knotq-MuiButtonBase-root-MuiListItemButton-root"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="MuiListItemIcon-root css-cokf1l-MuiListItemIcon-root"
+          >
+            <span
+              class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-rji8ye-MuiButtonBase-root-MuiCheckbox-root"
+            >
+              <input
+                class="PrivateSwitchBase-input css-j8yymo"
+                data-indeterminate="false"
+                type="checkbox"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="CheckBoxOutlineBlankIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="MuiListItemText-root MuiListItemText-dense css-cfq8qh-MuiListItemText-root"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
+            >
+              Pokémon Move - Identify the move that the Pokémon can learn
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters css-19f6boz-MuiListItem-root"
+      >
+        <div
+          class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters css-2knotq-MuiButtonBase-root-MuiListItemButton-root"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="MuiListItemIcon-root css-cokf1l-MuiListItemIcon-root"
+          >
+            <span
+              class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-rji8ye-MuiButtonBase-root-MuiCheckbox-root"
+            >
+              <input
+                class="PrivateSwitchBase-input css-j8yymo"
+                data-indeterminate="false"
+                type="checkbox"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="CheckBoxOutlineBlankIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="MuiListItemText-root MuiListItemText-dense css-cfq8qh-MuiListItemText-root"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-7ctihp-MuiTypography-root"
+            >
+              Pokémon Type - Choose the correct type for the Pokémon
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

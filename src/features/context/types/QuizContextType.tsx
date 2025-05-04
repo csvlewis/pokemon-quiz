@@ -16,6 +16,8 @@ export type QuizContextType = {
   setQuizLength: React.Dispatch<React.SetStateAction<number>>;
   selectedAnswer: Option;
   setSelectedAnswer: React.Dispatch<React.SetStateAction<Option>>;
+  selectedQuestionTypes: string[];
+  setSelectedQuestionTypes: React.Dispatch<React.SetStateAction<string[]>>;
   showResults: boolean;
   setShowResults: React.Dispatch<React.SetStateAction<boolean>>;
   resetQuiz: () => void;

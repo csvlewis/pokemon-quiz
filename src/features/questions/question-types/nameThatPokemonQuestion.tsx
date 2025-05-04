@@ -3,7 +3,7 @@ import { Option } from "@/types/Option";
 import { capitalize } from "@/utils/capitalize";
 import { randomizeArray } from "@/utils/randomizeArray";
 import { pokemonNames } from "@/features/questions/assets/pokemonNames";
-import { PokemonData } from "@/features/questions/types/PokemonData";
+import { PokemonData } from "@/types/PokemonData";
 import { filterAndRandomSelect } from "@/features/questions/utils/filterAndRandomSelect";
 
 export const nameThatPokemonQuestion = (pokemonData: PokemonData): Question => {

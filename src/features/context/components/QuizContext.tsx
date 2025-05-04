@@ -19,6 +19,8 @@ export const QuizContext = createContext<QuizContextType>({
   resetQuiz: () => {},
   selectedAnswer: {} as Option,
   setSelectedAnswer: () => {},
+  selectedQuestionTypes: [],
+  setSelectedQuestionTypes: () => {},
   showResults: false,
   setShowResults: () => {},
 });
