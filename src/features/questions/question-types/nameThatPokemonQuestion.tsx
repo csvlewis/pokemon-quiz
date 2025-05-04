@@ -10,7 +10,11 @@ export const nameThatPokemonQuestion = (pokemonData: PokemonData): Question => {
   const name: string = capitalize(pokemonData.name);
   const imageUrl: string = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonData.id}.png`;
 
-  const otherNames: string[] = filterAndRandomSelect(pokemonNames, [name], 3);
+  const otherNames: string[] = filterAndRandomSelect({
+    dataArray: pokemonNames,
+    selectedData: [name],
+    amount: 3,
+  });
 
   const wrongOptions: Option[] = otherNames.map((name) => ({
     text: name,

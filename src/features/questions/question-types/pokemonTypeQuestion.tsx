@@ -20,11 +20,11 @@ export const pokemonTypeQuestion = (pokemonData: PokemonData): Question => {
       ? `${name} has which type?`
       : `${name} has which types?`;
 
-  const otherTypes: string[] = filterAndRandomSelect(
-    pokemonTypes,
-    selectedTypes,
-    3
-  );
+  const otherTypes: string[] = filterAndRandomSelect({
+    dataArray: pokemonTypes,
+    selectedData: selectedTypes,
+    amount: 3,
+  });
 
   const options: Option[] = generateTypeOptions(selectedTypes, otherTypes);
 

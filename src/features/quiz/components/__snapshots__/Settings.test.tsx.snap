@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings should render correctly 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gtchvp-MuiPaper-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiStack-root css-d32kqm-MuiStack-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+      >
+        Welcome to the Pokémon Quiz!
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+      >
+        How long would you like your quiz to be?:
+      </p>
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+      >
+        <div
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+          role="combobox"
+          tabindex="0"
+        >
+          Short (5 questions)
+        </div>
+        <input
+          aria-hidden="true"
+          aria-invalid="false"
+          class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+          tabindex="-1"
+          value="5"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-lohd6h-MuiSvgIcon-root-MuiSelect-icon"
+          data-testid="ArrowDropDownIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+        <fieldset
+          aria-hidden="true"
+          class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            class="css-w4cd9x"
+          >
+            <span
+              aria-hidden="true"
+              class="notranslate"
+            >
+              ​
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-74d805-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+        >
+          Start Quiz
+        </p>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -3,7 +3,7 @@ import { PokemonData } from "@/features/questions/types/PokemonData";
 import { Question } from "@/types/Question";
 import { pokemonTypeQuestion } from "./pokemonTypeQuestion";
 
-describe("Name that pokemon question", () => {
+describe("Pokemon type question", () => {
   it("should return a pokemon type question", () => {
     const pokemonData: PokemonData = {
       id: 1,

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question should render correctly 1`] = `
+<div>
+  <div
+    class="MuiStack-root css-6rg9iv-MuiStack-root"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+    >
+      Question 
+      1
+      /
+      2
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+    >
+      Question 1
+    </p>
+    <img
+      class="MuiBox-root css-1ri4hkh"
+      src="https://example.com/image1.png"
+    />
+  </div>
+</div>
+`;
