@@ -9,11 +9,12 @@ export function Results(): React.ReactNode {
   if (!quizInProgress && showResults)
     return (
       <Paper>
-        <Stack alignItems="center" spacing={2} sx={{ margin: 2 }}>
+        <Stack alignItems="center" spacing={4} sx={{ margin: "48px" }}>
           <Typography>
             You got {correctAnswers} out of {questions.length} answers correct
           </Typography>
-          <Typography>Would you like to play again?</Typography>
+          <Typography>Thanks for playing!</Typography>
+          <Typography>Would you like to start a new quiz?</Typography>
           <Button variant="contained" onClick={() => resetQuiz()}>
             <Typography>Create New Quiz</Typography>
           </Button>
