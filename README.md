@@ -137,8 +137,8 @@ Project Link: [https://github.com/csvlewis/pokemon-quiz](https://github.com/csvl
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [PokeAPI]: https://img.shields.io/badge/Pok%C3%A9API-FF0000?style=for-the-badge
-[MUI]: https://img.shields.io/badge/Materials%20UI-3499fe?style=for-the-badge&logo=MUI&logoColor=white
-[Jest]: https://img.shields.io/badge/Jest-16c213?style=for-the-badge&logo=Jest&logoColor=white
+[MUI]: https://img.shields.io/badge/Materials%20UI-007FFF?style=for-the-badge&logo=MUI&logoColor=white
+[Jest]: https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=Jest&logoColor=white
 [Next-url]: https://nextjs.org/
 [PokeAPI-url]: https://github.com/PokeAPI/pokedex-promise-v2
 [MUI-url]: https://mui.com/material-ui/
