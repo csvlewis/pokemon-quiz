@@ -85,17 +85,17 @@ The project is a fairly simple one-page application, with UI elements generated 
    ```sh
    npm run dev
    ```
-5. Navigate to localhost:3000 in your browser to see the app running
+5. Navigate to <a href="localhost:3000">localhost:3000</a> in your browser to see the app running
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
-When you open the app you will be presented with a settings page where you can set the quiz length and question types
+When you open the app you will be presented with a settings page where you can set the quiz length and question types.
 
 <img src="src/assets/readme/settings.png" width="500" height="500">
 
-Once you submit your quiz settings, the quiz will start and you can submit an answer for each question and see if you are correct
+Once you submit your quiz settings, the quiz will start and you can submit an answer for each question and see if you are correct.
 
 <img src="src/assets/readme/answer.png" width="800" height="500">
 
@@ -129,7 +129,7 @@ These are features that have not been implemented yet but may be added in the fu
 
 ## Contact
 
-Christopher Lewis - [LinkedIn](Linkedin-url) - Email: chris@csvlewis.com
+Christopher Lewis - [LinkedIn][Linkedin-url] - Email: chris@csvlewis.com
 
 Project Link: [https://github.com/csvlewis/pokemon-quiz](https://github.com/csvlewis/pokemon-quiz)
 
