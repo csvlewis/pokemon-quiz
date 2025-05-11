@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { Option } from "@/types/Option";
 import { Question } from "@/types/Question";
-import { questionTypes } from "@/config/questionTypes";
+import { questionCategories } from "@/config/questionCategories";
 import { PokemonData } from "@/types/PokemonData";
 import { QuizContext } from "@/features/context/components/QuizContext";
 import { fetchPokemonData } from "@/features/questions/api/fetchPokemonData";
@@ -29,7 +29,7 @@ export function QuizContextProvider({
     isCorrect: false,
   });
   const [selectedQuestionTypes, setSelectedQuestionTypes] = useState<string[]>(
-    questionTypes.map((q) => q.name)
+    questionCategories.map((q) => q.name)
   );
   const [showResults, setShowResults] = useState<boolean>(false);
   const resetQuiz = () => {

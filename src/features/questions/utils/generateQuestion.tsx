@@ -1,25 +1,22 @@
-import { Question } from "@/types/Question";
 import { PokemonData } from "@/types/PokemonData";
-import { questionTypes } from "@/config/questionTypes";
+import { Question } from "@/types/Question";
+import { QuestionCategory } from "@/types/QuestionCategory";
+import { questionCategories } from "@/config/questionCategories";
 import { randomizeArray } from "@/utils/randomizeArray";
 
 export const generateQuestion = (
   pokemonData: PokemonData,
   selectedQuestionTypes: string[]
 ): Question => {
-  const filteredQuestionTypes: {
-    name: string;
-    description: string;
-    function: (pokemonData: PokemonData) => Question;
-  }[] = questionTypes.filter((questionType) =>
-    selectedQuestionTypes.includes(questionType.name)
+  const filteredQuestionTypes: QuestionCategory[] = questionCategories.filter(
+    (questionCategory) => selectedQuestionTypes.includes(questionCategory.name)
   );
 
   if (filteredQuestionTypes.length === 0) return {} as Question;
 
-  const question: Question = randomizeArray(filteredQuestionTypes)[0].function(
-    pokemonData
-  );
+  const question: Question = randomizeArray(
+    filteredQuestionTypes
+  )[0].generateQuestion(pokemonData);
 
   return question;
 };

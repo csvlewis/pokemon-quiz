@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import { questionTypes } from "@/config/questionTypes";
+import { questionCategories } from "@/config/questionCategories";
 import { useQuizContext } from "@/features/context/hooks/useQuizContext";
 import { useHandleToggle } from "@/features/settings/hooks/useHandleToggle";
 
@@ -21,22 +21,24 @@ export function QuestionTypeSelect(): React.ReactNode {
     <Stack alignItems="center">
       <Typography>Select at least one question type for your quiz:</Typography>
       <List sx={{ width: "100%" }}>
-        {questionTypes.map((questionType, index) => {
+        {questionCategories.map((questionCategory, index) => {
           return (
             <ListItem key={index} disablePadding>
               <ListItemButton
-                onClick={() => handleToggle(questionType.name)}
+                onClick={() => handleToggle(questionCategory.name)}
                 dense
                 disableRipple
               >
                 <ListItemIcon>
                   <Checkbox
-                    checked={selectedQuestionTypes.includes(questionType.name)}
+                    checked={selectedQuestionTypes.includes(
+                      questionCategory.name
+                    )}
                     disableRipple
                   />
                 </ListItemIcon>
                 <ListItemText
-                  primary={`${questionType.name} - ${questionType.description}`}
+                  primary={`${questionCategory.name} - ${questionCategory.description}`}
                 />
               </ListItemButton>
             </ListItem>
